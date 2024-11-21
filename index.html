@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="icon" href="img/senai123.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Atv 05</title>
+</head>
+<body>
+    <button id="btnNovoBotao" class="botoes">Nova</button>
+    <button id="btnGerenciar" class="botoes">Gerenciar</button>
+    
+    <div id="conteudo">
+        <p>Administrativo</p><br>
+        (☞ﾟヮﾟ)☞
+        <div id="cxadm"></div>
+        <p>Financeiro</p><br>
+        (☞ﾟヮﾟ)☞
+        <div id="cxfin"></div>
+        <p>Suporte</p><br>
+        (☞ﾟヮﾟ)☞
+        <div id="cxsup"></div>
+    </div>
+
+    <div class="tela_escura" id="cxCadastrar">
+        <div class="formulario">
+            <button id="bntFecharCadastrar">x</button><br><br>
+            Nome: <br>
+            <input type="text" id="cx_nome"><br><br>
+
+            Setor: <br>
+            <select id="cx_setor">
+                <option selected disabled>Selecione</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Suporte">Suporte</option>
+            </select><br><br>
+
+
+            <button class="botoes" id="btnCadastrar">Cadastrar</button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="tela_escura" id="cxEditar">
+        <div class="formulario">
+            <button id="bntFecharEditar">x</button><br><br>
+            <h1>Editar funcionário</h1>
+            Matrícula: <br>
+            <input type="number" id="caixa_matricula2" disabled><br><br>
+
+            Nome: <br>
+            <input type="text" id="cx_nome2"><br><br>
+
+            Setor: <br>
+            <select id="cx_setor2">
+                <option selected disabled>Selecione</option>
+                <option value="Financeiro">Financeiro</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Suporte">Suporte</option>
+            </select><br><br>
+
+
+            Situação: <br>
+            <select id="caixa_situacao2">
+                <option selected disabled>Selecione</option>
+                <option value="Ativo">Ativo</option>
+                <option value="Inativo">Inativo</option>
+            </select><br><br>
+
+
+            <button class="botoes1" id="btnSalvarAlteracoes">Salvar alterações</button>
+            <button class="botoes1" id="btnDeletar">Deletar</button>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
